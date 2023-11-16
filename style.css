@@ -1,0 +1,102 @@
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #d8fce4;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+#myresume {
+  background-color: #d8fce4;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #00924b;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.timeline-item.left {
+  float: left;
+  clear: both;
+  margin-right: 10px;
+}
+
+.timeline-item.right {
+  float: right;
+  clear: both;
+  margin-left: 10px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background: #00924b;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.timeline-item.animated::before {
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.cool-title {
+  font-family: 'Buttercup Sample', sans-serif;
+}
+
+.fa-facebook {
+  font-size: 10px;
+}
+
+.fa-instagram {
+  font-size: 23px;
+}
+.fa-twitter {
+  font-size: 23px;
+}
+.fa-youtube {
+  font-size: 23px;
+}
